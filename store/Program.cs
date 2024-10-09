@@ -13,7 +13,7 @@ int boughtReadyFood = 0;
 
 Console.WriteLine("Du ska till afären och handla lite När du är i afären hittar du bara fyra saker du vill köppa");
 
-while (itemSelected != 5)
+while (itemSelected != 5 && money != 0)
 {
     Console.WriteLine($"Du har {money} kr och du kan välja mellan");
 
@@ -88,8 +88,8 @@ while (itemSelected != 5)
 
 
 }
-Console.WriteLine("Du går hem efter dina val och funderar om du värkligen hade valt rätt");
-Console.WriteLine($"Du köpte {boughtCoke} color, {boughtMilk} mjölk kartonger, {boughtCandy} påsar godis och {boughtReadyFood} färdig mat");
+Console.WriteLine("Du går hem efter dina val och funderar om du värkligen hade gjort rätt val");
+Console.WriteLine($"Du köpte {boughtCoke} color, {boughtMilk} mjölk kartonger, {boughtCandy} påsar godis, {boughtReadyFood} färdig mat och hade {money}kr kvar");
 Console.WriteLine("Tryck ENTER för att stänga spelet");
 
 
